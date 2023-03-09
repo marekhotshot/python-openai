@@ -20,7 +20,7 @@ request_data = {
   "model": "text-davinci-003",
   "prompt": f"Write python script to {args.prompt}. Provide only code, no text",
   "max_tokens": 2000,
-  "temperature": 0.3,
+  "temperature": 0.5,
 }
 
 response = requests.post(api_endpoint, headers=request_headers, json=request_data)
